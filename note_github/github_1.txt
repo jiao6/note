@@ -1,0 +1,42 @@
+1.组长笔记
+	git remote rm origin
+	git remote add origin https://github.com/amenging/nodejs-demo.git //连接远程
+	git clone https://github.com/ztqd/app.git
+	cd app(从外到里获取，不能跳跃获取)
+	git add .(一次性添加所有文件)（.也可以换成文件名）
+	git commit -m "xin xi(最好不要出现中文)" (添加信息)
+	git push -u origin master
+	git pull https://github.com/ztqd/app.git（更新）
+
+2.出现奇怪页面按  :wq 就可以退出
+3.加权限（在.git文件夹中的config文件中改成）
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "origin"]
+	url = https://ztqd:ztqd2016@github.com/ztqd/app.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+3.怎么样把项目弄到服务器上？
+	1）先把项目push到github
+        2）登陆服务器
+	   在www文件夹下新建一个文件夹
+	3）把项目从github上clone到本地（下一次是pull到本地）
+	   注意：a)此时的本地就是服务器
+		 b)若是pull的话之前要cd 文件夹名
+
+	4）查看服务器www文件夹是否有项目
+
+4.怎么打开服务器
+	1）windows+R
+	2)输入mstsc
+	3）
+
