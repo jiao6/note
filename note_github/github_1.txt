@@ -25,6 +25,8 @@
 	url = https://ztqd:ztqd2016@github.com/ztqd/app.git  //ztqd:ztqd2016是用户名：密码
 	fetch = +refs/heads/*:refs/remotes/origin/*
 
+多用户的ssh key 问题推荐链接
+http://www.cnblogs.com/amenging/p/7944504.html
 3.怎么样把项目弄到服务器上？
 	1）先把项目push到github
         2）登陆服务器
