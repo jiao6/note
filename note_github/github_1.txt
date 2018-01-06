@@ -22,7 +22,7 @@
 	remote = origin
 	merge = refs/heads/master
 [remote "origin"]
-	url = https://ztqd:ztqd2016@github.com/ztqd/app.git
+	url = https://ztqd:ztqd2016@github.com/ztqd/app.git  //ztqd:ztqd2016是用户名：密码
 	fetch = +refs/heads/*:refs/remotes/origin/*
 
 3.怎么样把项目弄到服务器上？
